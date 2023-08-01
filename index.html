@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Abhilash's-Portfolio</title>
+</head>
+<body>
+    <div class="webpage">
+
+        <div class="nav-container">
+
+            <nav class="navbar">
+                <div class="logo">Abhilash<b>.</b></div>
+                <div class="nav-links">
+                    <ul class="nav-items">
+                        <li><a href="#">home</a></li>        
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">skills</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abhilash-tripathi-8a591315b"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/AbhilashTripathi"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </nav>
+
+        </div>
+        
+        <div class="body-wrapper">
+
+            <div class="col-left">
+                <div class="img-box">
+                    <img src="splash.png" alt="splash" id="splash">
+                    <img src="photo.png" alt="profile-pic">
+                </div>
+            </div>
+
+            <div class="col-right">            
+                <span class="heading">Welcome to my website</span>
+                <h1> I'm <span class="typing-animation"></span></h1>
+                <p class="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste facilis libero expedita accusantium voluptatum voluptatibus, corporis quia beatae aliquid architecto.</p>
+                <div class="two-buttons">
+                    <button>Download CV</button>
+                    <button>Hire Me</button>
+                </div>
+                <div class="toggleSwitch">
+                    <i class="fa fa-sun"></i>
+                    <i class="fa fa-moon"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".typing-animation", {
+            strings : ["coder","comp.prog.", "web dev."],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+
+        const toggleSwitch = document.querySelector('.toggleSwitch');
+        toggleSwitch.addEventListener('click', function(){
+            document.body.classList.toggle('switch');
+        })
+    </script>
+</body>
+</html>
